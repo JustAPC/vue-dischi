@@ -39,7 +39,7 @@ export default {
       songList: [],
       loadingStatus: true,
       filteredGenre: "",
-      filteredArtist: "",
+      filteredByArtist: "",
     };
   },
   created() {
@@ -72,15 +72,7 @@ export default {
       }
 
       return this.songList.filter((elm) => {
-        return elm.artist.includes(this.filteredGenre);
-      });
-
-      else if (this.filteredArtist === "All") {
-        return this.songList;
-      }
-
-      return this.songList.filter((elm) => {
-        return elm.author.includes(this.filteredArtist);
+        return elm.genre.includes(this.filteredGenre);
       });
     },
   },
