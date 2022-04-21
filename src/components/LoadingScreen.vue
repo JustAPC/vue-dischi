@@ -1,5 +1,5 @@
 <template>
-  <div class="loading-screen">Stiamo caricando la tua musica!</div>
+  <h1 class="loading-screen">Stiamo caricando la tua musica!</h1>
 </template>
 
 <script>
@@ -10,12 +10,15 @@ export default {
 </script>
 
 <style scoped lang="scss">
-div {
+h1 {
   display: flex;
   justify-content: center;
   align-content: center;
   color: white;
   height: 100vh;
   width: 100vw;
+  position: absolute;
+  top: 50%;
+  left: 0%;
 }
 </style>
